@@ -159,3 +159,20 @@ GitHub: https://github.com/Gayathri575
 ## License
 
 This project is developed for educational purposes.
+
+# Electricity Bill Calculator
+
+**Technology Stack:** Java, Spring Boot, Thymeleaf, MySQL, Hibernate
+
+This project is a **web-based Electricity Management System** that allows administrators and users to manage customers and calculate their electricity bills efficiently. Users can enter a **Customer ID and Name** to view their bills dynamically in a **clear, tabular format**.
+
+## Key Features
+
+- Calculates electricity bills based on units consumed.
+- Search and display bills by Customer ID or Name.
+- 4-digit ID formatting for clarity (e.g., 0001, 0002).
+- Input validation and error handling for accurate calculations.
+- Interactive frontend using Thymeleaf.
+- Robust backend logic using Spring Boot and MySQL.
+- Demonstrates layered architecture: Controller → Service → Repository.
+

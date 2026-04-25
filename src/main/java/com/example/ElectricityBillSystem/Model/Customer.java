@@ -1,5 +1,6 @@
 package com.example.ElectricityBillSystem.Model;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -32,6 +33,7 @@ public class Customer {
     @Column(name = "CustomerPhNo")
     private String phone ;
 
-    @OneToMany(mappedBy = "customer" , cascade = CascadeType.ALL , fetch = FetchType.EAGER)
-    private List<Bill> bills ;
+    @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JsonManagedReference
+    private List<Bill> bills;
 }
